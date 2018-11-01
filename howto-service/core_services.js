@@ -80,16 +80,28 @@ var createComponentsServer = function(urlPath, config) {
     next();
   });
 
-var accion = "NADA";
 var Data_Services = require('./data_services');
 
 var data_services = new Data_Services();
 
-app.post('/pedidos', function(req,res) { 
+app.get('/producto/:id', function(req,res) { 
+    res.writeHead(200, {"Content-Type": "text/html"}); 
+   var html = "<html><head><link rel='stylesheet' type='text/css' href='/static/css/style.css'/></head>" +
+   "<body bgcolor='black'><br><br><br>" + 
+   "<font color='white'><H1>Parrot - Drone Anafi - Negro</H1></font>" + 
+   "<font color='white'><h2>ANAFI representa una nueva generacion de drones. Se trata de la solucion ideal para grabar videos de alta calidad y hacer fotos excepcionales, capturando los mejores momentos de tu vida diaria. La camara de vuelo 4K HDR despliega capacidades de vídeo y foto exclusivas, gracias a su gimbal unico de inclinación en 180 grados y un zoom de hasta 2,8X sin perdidas. Gracias a ser plegable y ultracompacto, podras llevar este dron Parrot contigo en cualquier momento y lugar. ANAFI ofrece un tiempo de vuelo de 25 minutos y prestaciones avanzadas, al tiempo que es silencioso y resistente a condiciones climaticas extremas. Gracias a la Inteligencia Artificial integrada de ANAFI, aprovecha sus modos de vuelo automaticos para hacer tomas espectaculares </h2>" +
+   "<h2>Stock Disponible 1000 unidades</h2>" +
+   "<br><hr><br><h2>Precio de Contado 19,999 $</h2>" +
+   "</font></body></html>";
+   res.end(html);
+});
+
+app.get('/comprar', function(req,res) { 
  console.log('nuevo pedido\n');
  data_services.hacerPedido();
  res.writeHead(200, {"Content-Type": "application/json"}); 
- res.end(JSON.stringify({"resp":"OK"}));      
+ var texto = "El pedido sera despachado!";
+ res.end(texto);      
 });
 
 app.get('/pedidos', function(req,res) { 
