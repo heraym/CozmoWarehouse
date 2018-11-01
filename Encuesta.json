@@ -1,0 +1,932 @@
+{
+    "actionList": [
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "0",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "0",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "radioButtons_1",
+                "OneTwoThree"
+            ],
+            "trigger": "value",
+            "triggerValue": "1",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "1",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "2",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "2",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree"
+            ],
+            "trigger": "value",
+            "triggerValue": "3",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "3",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "4",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "4",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "FourFive"
+            ],
+            "trigger": "value",
+            "triggerValue": "5",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "starRating_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "OneTwoThree",
+                "radioButtons_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "5",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "radioButtons_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "pickList_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "yes",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "email_1"
+            ],
+            "trigger": "contains",
+            "triggerValue": "email",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "email_1"
+            ],
+            "trigger": "notcontains",
+            "triggerValue": "email",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "button_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "parameters": [
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "trigger": "paneValid",
+            "type": "exitToBot"
+        },
+        {
+            "elementTrigger": "radioButtons_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "pickList_1",
+                "email_1"
+            ],
+            "trigger": "value",
+            "triggerValue": "no",
+            "type": "hideElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "phone_1"
+            ],
+            "trigger": "contains",
+            "triggerValue": "Phone",
+            "type": "showElements"
+        },
+        {
+            "elementTrigger": "pickList_1",
+            "enabled": true,
+            "eventTrigger": "valueChanged",
+            "ids": [
+                "phone_1"
+            ],
+            "trigger": "notcontains",
+            "triggerValue": "Phone",
+            "type": "hideElements"
+        }
+    ],
+    "chatbox": {
+        "active": true,
+        "apiId": "Encuesta",
+        "build": 3,
+        "builder": {
+            "editCount": 41
+        },
+        "id": 2,
+        "tagList": [
+        ],
+        "trashed": false
+    },
+    "displayList": [
+        {
+            "allowDismiss": false,
+            "elementList": [
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "src": "/chatbox2/upload?k=public%2FO540%2Fschema%2FQy1C%2FB9Lh%2FHayH5cgViZNKiE47E1_mzmDLoNE7ivXMETU0j33Jh26s0wtL-7YtZYgKTV8rFb2kqpDmhjO8pTobQA%3D%3D%2Facme.jpg",
+                        "type": "image"
+                    },
+                    "id": "image_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left",
+                        "width": "90%"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": "ACME"
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "icons": [
+                            "fa-star",
+                            "fa-star",
+                            "fa-star",
+                            "fa-star",
+                            "fa-star"
+                        ],
+                        "label": "Como fue tu experiencia como usuario del servicio?",
+                        "labelInline": false,
+                        "leftIcon": "fa-frown-o",
+                        "required": false,
+                        "rightIcon": "fa-smile-o",
+                        "type": "stars"
+                    },
+                    "id": "starRating_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "20px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "center"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "Que podriamos haber hecho mejor?",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "OneTwoThree",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "Que hicimos bien?",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "FourFive",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "inline": false,
+                        "label": "Lamentamos que no estes contento con nosotros. Puede alguien de nuestro equipo contactarte?",
+                        "loadOptionsFromAction": false,
+                        "options": [
+                            {
+                                "label": "Si",
+                                "since": 0,
+                                "value": "yes"
+                            },
+                            {
+                                "label": "No",
+                                "since": 0,
+                                "value": "no"
+                            }
+                        ],
+                        "required": false,
+                        "selectedIcon": "fa-check-circle",
+                        "type": "radio",
+                        "unselectedIcon": "fa-circle-o"
+                    },
+                    "id": "radioButtons_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "allVisible": true,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "inline": false,
+                        "label": "Como quisieras que te contactemos?",
+                        "loadOptionsFromAction": false,
+                        "options": [
+                            {
+                                "initiallyChecked": false,
+                                "label": "Telefono",
+                                "since": 0,
+                                "value": "Phone"
+                            },
+                            {
+                                "initiallyChecked": false,
+                                "label": "Email",
+                                "since": 0,
+                                "value": "email"
+                            }
+                        ],
+                        "required": false,
+                        "rows": 2,
+                        "type": "picklist"
+                    },
+                    "id": "pickList_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "rgba(255, 255, 255, 0)",
+                        "borderColor": "#E7E7E7",
+                        "borderRadius": "0px",
+                        "borderStyle": "",
+                        "borderWidth": "",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "Nro de Telefono",
+                        "labelInline": false,
+                        "required": false,
+                        "type": "phone"
+                    },
+                    "id": "phone_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "Dirección de Email",
+                        "labelInline": false,
+                        "maxLength": 80,
+                        "placeholder": "",
+                        "required": false,
+                        "type": "email"
+                    },
+                    "id": "email_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": false,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "errorMessage": "An error has occurred",
+                        "label": "Alguna otra cosa que quisieras que sepamos?",
+                        "maxLength": 1000,
+                        "placeholder": "",
+                        "required": false,
+                        "rows": 5,
+                        "type": "multiLineInput"
+                    },
+                    "id": "multiLineInput_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "borderColor": "#ccc",
+                        "borderRadius": "4px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "agentCanEdit": false,
+                        "agentMasked": false,
+                        "buttonClass": "InteractiveButton",
+                        "customerCanEdit": true,
+                        "elementValidation": {
+                            "maxLength": 0,
+                            "maxLengthErrorMessage": "This field does not accept more than {$count} characters.",
+                            "minLength": 0,
+                            "minLengthErrorMessage": "This field requires at least {$count} characters.",
+                            "regex": "",
+                            "regexErrorMessage": "",
+                            "required": false,
+                            "requiredErrorMessage": "This is required",
+                            "snippet": "",
+                            "validateMaxLength": false,
+                            "validateMinLength": false,
+                            "validateRegex": false,
+                            "validateSnippet": false
+                        },
+                        "label": "Enviar Feedback",
+                        "required": false,
+                        "type": "button"
+                    },
+                    "id": "button_1",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#93b547",
+                        "borderColor": "#333",
+                        "borderRadius": "3px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#FFFFFF",
+                        "elementClass": "",
+                        "fontSize": "14px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "center",
+                        "width": "100%"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                },
+                {
+                    "actionList": [
+                    ],
+                    "detail": {
+                        "src": "",
+                        "type": "image"
+                    },
+                    "id": "image_2",
+                    "initiallyEnabled": true,
+                    "initiallyVisible": true,
+                    "innerStyles": {
+                        "backgroundColor": "#FFFFFF",
+                        "backgroundImage": "",
+                        "borderColor": "#333",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "0px",
+                        "color": "#333333",
+                        "elementClass": "",
+                        "fontSize": "13px",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                        "labelClass": "",
+                        "textAlign": "left",
+                        "width": "100%"
+                    },
+                    "outerStyles": {
+                        "marginBottom": "12px",
+                        "marginLeft": "0",
+                        "marginRight": "0",
+                        "marginTop": "0",
+                        "paddingBottom": "0",
+                        "paddingLeft": "0",
+                        "paddingRight": "0",
+                        "paddingTop": "0",
+                        "width": "100%"
+                    },
+                    "since": 0,
+                    "tooltip": ""
+                }
+            ],
+            "id": "PANE_1",
+            "innerStyles": {
+                "backgroundColor": "rgba(255, 255, 255, 1)",
+                "backgroundImage": "",
+                "borderColor": "#333",
+                "borderRadius": "0px",
+                "borderStyle": "solid",
+                "borderWidth": "0px",
+                "color": "#333333",
+                "fontSize": "13px",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "textAlign": "left"
+            },
+            "validation": {
+                "asYouGo": true,
+                "errorMessage": "Please see errors above before continuing.",
+                "snippet": "",
+                "usingSnippet": false
+            }
+        }
+    ],
+    "externalDataList": [
+    ],
+    "general": {
+        "author": "Unknown",
+        "created": "Fri Oct 12 2018",
+        "icon": "/chatbox2/upload?k=public%2FO540%2Fschema%2FPYo6%2Fly1n%2FL59APf7D0xd6Ezun5eE1hGf8iiH3K37ll1L29uUyTlxL6Z66Dmizab4fND4fZNdJiQCyzKc-ms4Ttg%3D%3D%2Facme.jpg",
+        "internalDescription": "Get feedback from your customers and collect email to follow up on their experience",
+        "inviteMessageList": [
+            "Haz click para participar de la encuesta {link}"
+        ],
+        "name": "Encuesta",
+        "previewIcon": "/chatbox2/upload?k=public%2FO540%2Fschema%2Fq9yk%2FlWwQ%2FdMzUmhmZMEHu1tA50lnERetXDCrinMz1YZuIBZFINxKL6JWoYisOmno9_pbXeZBz_6_FhNoUmCWDtg%3D%3D%2Facme.jpg",
+        "previewText": "Encuesta"
+    },
+    "snippetList": [
+    ],
+    "version": 7
+}
