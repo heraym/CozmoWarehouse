@@ -1,0 +1,2 @@
+webpackJsonp([55],{888:function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n={},r=["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"];["D","Do","DD"].forEach(function(e){n[e+" MMMM"]=function(t,o){return(0,o.formatters[e])(t,o)+" "+r[t.getUTCMonth()]}}),t.default=n,e.exports=t.default}});
+//# sourceMappingURL=f526a7cbe84eac92116f.js.map
