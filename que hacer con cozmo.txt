@@ -1,0 +1,14 @@
+detectar colores (color_finder)
+detectar caras (
+hablar, contar, cantar
+
+seguir una cara e iluminarse con una cara
+
+protestar (stack or roll)
+hacer un stack
+lookaround
+
+------------------
+elegir color y buscar color
+ordenar warehouse
+detectar cuando se mueve un objeto
