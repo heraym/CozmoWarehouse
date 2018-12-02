@@ -1,6 +1,3 @@
-var lista = [{id: 1, nombre:"hernan"},{id: 2, nombre: "juan"}];
-var output = {};
-output = lista.findIndex(obj => obj.id == 2); 
 //output = lista.find(function(obj) { return obj.id == 2; });
 /*    for (var i = 0; i < lista.length; i++) { 
      if (lista[i].id == 2) {
@@ -9,4 +6,15 @@ output = lista.findIndex(obj => obj.id == 2);
     }
 */
 //t = listatareas.findIndex(tarea => tarea.ciclo === dd);
-console.log(output);
+var Data_Services = require('./data_services');
+
+var data_services = new Data_Services();
+data_services.cancelado(callback);
+data_services.cancelarPedido();
+console.log("cancelado");
+data_services.cancelado(callback);
+
+function callback(respuesta) { 
+    console.log(respuesta);
+    }
+

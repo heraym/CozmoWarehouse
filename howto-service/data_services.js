@@ -8,10 +8,19 @@ var cozmo_port = 4100;
 
 var listaPedidos = [];
 var nropedido = 0;
-
+var cancelar = false;
 var Data_Services = function () {
 };
 
+Data_Services.prototype.cancelado = function (callback) {
+	if (cancelar == true) 
+		{ 
+			cancelar = false;
+                        callback("OK");
+	    } else {
+	    	 callback("ERROR");
+	    }
+}
 Data_Services.prototype.despachar = function (callback) {
 	if (listaPedidos.length > 0) 
 		{ 
@@ -20,6 +29,9 @@ Data_Services.prototype.despachar = function (callback) {
 	    } else {
 	    	 callback("ERROR");
 	    }
+}
+Data_Services.prototype.cancelarPedido = function (callback) {
+	cancelar = true;
 }
 Data_Services.prototype.hacerPedido = function (callback) {
 	nropedido = nropedido + 1;

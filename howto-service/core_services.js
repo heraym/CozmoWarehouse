@@ -1,4 +1,4 @@
-var express = require("express"),
+﻿var express = require("express"),
     http = require("http"),
      cors = require("cors"),
      app = express();
@@ -124,6 +124,15 @@ app.get('/pedidos/despachar', function(req,res) {
     }
  });
 
+app.get('/pedidos/cancelar', function(req,res) { 
+  console.log('cancelar pedido\n');
+  data_services.cancelado(callbackCancelar);
+  function callbackCancelar (respuesta) { 
+    if (respuesta == "OK") { console.log("BIEN");}
+     res.writeHead(200, {"Content-Type": "application/json"}); 
+     res.end(JSON.stringify({"resp": respuesta}));  
+    }
+ });
  
 return app;
 }

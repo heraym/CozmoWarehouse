@@ -25,12 +25,10 @@ module.exports =
               }
              
              var data_services = new Data_Services();
-             data_services.hacerPedido(callback);
-
-             function callback(lista) {
-               conversation.reply({text: "El pedido " + pedido + " ha sido cancelado!" });
-               conversation.transition();
-               done();
-              }
+             data_services.cancelarPedido();
+             conversation.reply({text: "El pedido " + pedido + " ha sido cancelado!" });
+             conversation.transition();
+             done();
+             
             }
     };
