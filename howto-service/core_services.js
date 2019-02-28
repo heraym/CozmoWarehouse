@@ -8,11 +8,12 @@ app.use(cors());
 
 const bodyParser = require('body-parser');
 
+
 var createComponentsServer = function(urlPath, config) {
     var app = express();
+
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
-
 		
     var shell = require('./shell')(config);
 
@@ -84,6 +85,8 @@ var Data_Services = require('./data_services');
 
 var data_services = new Data_Services();
 
+    app.use("/static", express.static(__dirname + '/static'));
+
 app.get('/producto/:id', function(req,res) { 
     res.writeHead(200, {"Content-Type": "text/html"}); 
    var html = "<html><head><link rel='stylesheet' type='text/css' href='/static/css/style.css'/></head>" +
@@ -133,6 +136,44 @@ app.get('/pedidos/cancelar', function(req,res) {
      res.end(JSON.stringify({"resp": respuesta}));  
     }
  });
+
+  app.get('/sensor/:id', function(req,res) { 
+   
+   var nombre = req.params.id;
+   console.log("nombre:" + nombre);
+   data_services.buscarSensor(nombre, callback);
+   
+   function callback(sensor) {
+     if (sensor != null) {
+// Defino labels de grafico
+       var labels = [];
+       for (i = 0; i < sensor.historial.length; i++) { 
+         labels.push(sensor.historial[i].creationDate);
+        }
+       var dataT = [];
+       for (i = 0; i < sensor.historial.length; i++) { 
+         dataT.push(sensor.historial[i].temperature);
+       }
+
+       var dataH = [];
+       for (i = 0; i < sensor.historial.length; i++) { 
+         dataH.push(sensor.historial[i].humidity);
+        }
+
+       var dataL = [];
+       for (i = 0; i < sensor.historial.length; i++) { 
+         dataL.push(sensor.historial[i].luminance);
+       }
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+        res.setHeader('Access-Control-Allow-Credentials', true);
+        res.writeHead(200, {"Content-Type": "application/json"}); 
+       var info = { 'sensor': sensor, 'dataT': dataT, 'dataH': dataH, 'dataL': dataL};
+       res.end(JSON.stringify(info));    
+    }
+  }
+});
  
 return app;
 }
