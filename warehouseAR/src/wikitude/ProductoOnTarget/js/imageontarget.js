@@ -124,25 +124,7 @@ var World = {
 			}
 	   });
 	    
-        var infoProducto1 = new AR.HtmlDrawable({
-       //   html:"<div>Ver info del producto</div>",
-   		  uri: "https://howtoservice-gse00014621.uscom-east-1.oraclecloud.com/producto/1"
-		}, 0.8, {
-		    viewportWidth: 1000,
-		    viewportHeight: 700, 
-		    backgroundColor: "#000000",
-		    opacity: 0.5,
-		    offsetX: 0.1,
-		    offsetY: 0.5,
-		    horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.RIGHT,
-		    verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP,
-		    clickThroughEnabled: true,
-		    allowDocumentLocationChanges: false,
-		    onDocumentLocationChanged: function onDocumentLocationChangedFn(uri) {
-		        AR.context.openInBrowser(uri);
-    		}
-          });  
-
+	 
 		var irDeASectorB = this.irASector(estoySectorA, voyDeAToB, voyDeAToC, "A","B", 0.2, {
     		   offsetX: -0.3,
     		   offsetY: -0.3
@@ -173,6 +155,30 @@ var World = {
     		   offsetY: -0.6
 		});
 
+		this.imgArticulo1 = new AR.ImageResource("assets/articulos/articulo1.png");
+        var articulo1 = new AR.ImageDrawable(this.imgArticulo1, 1, {
+			offsetX : 0.3
+	   });      
+	   
+	   var infoProducto1 = new AR.HtmlDrawable({
+       //   html:"<div>Ver info del producto</div>",
+   		  uri: "assets/articulos/articulo.html"
+		}, 0.8, {
+		    viewportWidth: 800,
+		    viewportHeight: 600, 
+		    // backgroundColor: "#000000",
+		    opacity: 0.5,
+		    offsetX: 0.1,
+		    offsetY: 0.5,
+		    horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.RIGHT,
+		    verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP,
+		    clickThroughEnabled: true,
+		    allowDocumentLocationChanges: false,
+		    onDocumentLocationChanged: function onDocumentLocationChangedFn(uri) {
+		        AR.context.openInBrowser(uri);
+    		}
+          });  
+
 		/*
 			The last line combines everything by creating an AR.ImageTrackable with the previously created tracker, the name of the image target and the drawable that should augment the recognized image.
 			Please note that in this case the target name is a wildcard. Wildcards can be used to respond to any target defined in the target collection. If you want to respond to a certain target only for a particular AR.ImageTrackable simply provide the target name as specified in the target collection.
@@ -194,7 +200,12 @@ var World = {
 				cam: [estoySectorC, voyDeCToA, voyDeCToB, irDeCSectorA, irDeCSectorB]
 			}
 		});
-				
+		
+		var pageFour = new AR.ImageTrackable(this.tracker, "telefono", {
+			drawables: {
+				cam: [articulo1, infoProducto1]
+			}
+		});		
 	},
    
         
