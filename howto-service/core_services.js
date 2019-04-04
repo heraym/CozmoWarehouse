@@ -89,13 +89,35 @@ var data_services = new Data_Services();
 
 app.get('/producto/:id', function(req,res) { 
     res.writeHead(200, {"Content-Type": "text/html"}); 
-   var html = "<html><head><link rel='stylesheet' type='text/css' href='/static/css/style.css'/></head>" +
-   "<body bgcolor='black'><br><br><br>" + 
-   "<font color='white'><H1>Parrot - Drone Anafi - Negro</H1></font>" + 
-   "<font color='white'><h2>ANAFI representa una nueva generacion de drones. Se trata de la solucion ideal para grabar videos de alta calidad y hacer fotos excepcionales, capturando los mejores momentos de tu vida diaria. La camara de vuelo 4K HDR despliega capacidades de vídeo y foto exclusivas, gracias a su gimbal unico de inclinación en 180 grados y un zoom de hasta 2,8X sin perdidas. Gracias a ser plegable y ultracompacto, podras llevar este dron Parrot contigo en cualquier momento y lugar. ANAFI ofrece un tiempo de vuelo de 25 minutos y prestaciones avanzadas, al tiempo que es silencioso y resistente a condiciones climaticas extremas. Gracias a la Inteligencia Artificial integrada de ANAFI, aprovecha sus modos de vuelo automaticos para hacer tomas espectaculares </h2>" +
+	var producto = {id: '1', nombre: 'Producto 1', descripcion: 'Descripcion de Producto',  stock: 100, otro1: 50, otro2: 60};
+	var color1 = "red";
+	var color2 = "red";
+	var color3 = "red";
+	
+	if (producto.stock > 100) { color1= "green"; } else { color1 = "red";}
+	if (producto.otro1 > 100) { color2= "green"; } else { color2 = "red";}
+	if (producto.otro2 > 100) { color3= "green"; } else { color3 = "red";}
+   var html = "<html><head><link rel='stylesheet' type='text/css' href='/static/css/main.css'/></head>" +
+   "<body><br><br><br>" + 
+   "<h1>" + producto.nombre + "</h1>" + 
+   "<h2>" + producto.descripcion + "</h2>" +
    "<h2>Stock Disponible 1000 unidades</h2>" +
    "<br><hr><br><h2>Precio de Contado 19,999 $</h2>" +
-   "</font></body></html>";
+   "<table><tr>" + 
+   "<td><svg width='100' height='100'>" + 
+   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color1 + "' />" +
+   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.stock + "</text>" + 
+   "</svg></td>" +
+   "<td><svg width='100' height='100'>" + 
+   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color2 + "' />" +
+   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.otro1 + "</text>" + 
+   "</svg></td>" +
+   "<td><svg width='100' height='100'>" + 
+   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color3 + "' />" +
+   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.otro2 + "</text>" + 
+   "</svg></td>" +
+   "</tr></table>" +     
+    "</body></html>";
    res.end(html);
 });
 
