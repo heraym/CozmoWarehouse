@@ -84,41 +84,38 @@ var createComponentsServer = function(urlPath, config) {
 var Data_Services = require('./data_services');
 
 var data_services = new Data_Services();
+var Warehouse_Services = require('./warehouse_services');
+var warehouse_services = new Warehouse_Services(); 
 
     app.use("/static", express.static(__dirname + '/static'));
 
 app.get('/producto/:id', function(req,res) { 
+  warehouse_services.producto(req.params.id, callbackProducto);
+  function callbackProducto (producto) {
     res.writeHead(200, {"Content-Type": "text/html"}); 
-	var producto = {id: '1', nombre: 'Producto 1', descripcion: 'Descripcion de Producto',  stock: 100, otro1: 50, otro2: 60};
-	var color1 = "red";
+	/*var color1 = "red";
 	var color2 = "red";
 	var color3 = "red";
 	
 	if (producto.stock > 100) { color1= "green"; } else { color1 = "red";}
 	if (producto.otro1 > 100) { color2= "green"; } else { color2 = "red";}
-	if (producto.otro2 > 100) { color3= "green"; } else { color3 = "red";}
+	if (producto.otro2 > 100) { color3= "green"; } else { color3 = "red";} */
    var html = "<html><head><link rel='stylesheet' type='text/css' href='/static/css/main.css'/></head>" +
    "<body><br><br><br>" + 
-   "<h1>" + producto.nombre + "</h1>" + 
-   "<h2>" + producto.descripcion + "</h2>" +
-   "<h2>Stock Disponible 1000 unidades</h2>" +
-   "<br><hr><br><h2>Precio de Contado 19,999 $</h2>" +
-   "<table><tr>" + 
-   "<td><svg width='100' height='100'>" + 
-   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color1 + "' />" +
-   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.stock + "</text>" + 
-   "</svg></td>" +
-   "<td><svg width='100' height='100'>" + 
-   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color2 + "' />" +
-   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.otro1 + "</text>" + 
-   "</svg></td>" +
-   "<td><svg width='100' height='100'>" + 
-   "<circle cx='50' cy='50' r='40' stroke='black' stroke-width='4' fill='" + color3 + "' />" +
-   "<text x='50%' y='50%' text-anchor='middle' stroke='black' font-size='32' dy='.3em'>" + producto.otro2 + "</text>" + 
-   "</svg></td>" +
-   "</tr></table>" +     
+   "<h1>" + producto.detalle.descripcion + "</h1>" + 
+   "<br><hr><br><h2>Calidad</h2>" +
+   "<h3>Vida util " + producto.calidad.vida_util + " dias</h3>" +
+   "<h3>Porcentaje Aceptable " + producto.calidad.porc_aceptable + " %</h3>" +
+   "<br><hr><br><h2>Almacenamiento</h2>" +
+   "<h3>Cantidad Max Caja " + producto.almacenamiento.cantidad_max_caja + "</h3>" +
+   "<h3>Cantidad Estandar Caja " + producto.almacenamiento.cantidad_stdr_caja + "</h3>" +
+   "<h3>Peso Paquetes Estandar " + producto.almacenamiento.peso_paquete_stdr + " kg</h3>" +
+   "<h3>Volumen Paquetes Estandar " + producto.almacenamiento.volumen_paquete_stdr + " </h3>" +
+   "<h3>LPN por Nivel " + producto.almacenamiento.lpn_x_nivel + " kg</h3>" +
+   "<h3>Niveles por Pallet " + producto.almacenamiento.niveles_x_pallet + " kg</h3>" +
     "</body></html>";
    res.end(html);
+  }
 });
 
 app.get('/comprar', function(req,res) { 

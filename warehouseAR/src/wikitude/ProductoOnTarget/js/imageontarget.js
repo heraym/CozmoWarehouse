@@ -1,6 +1,7 @@
 var World = {
 	loaded: false,
-
+    this.host = "http://132.145.170.127:4444";
+	
 	init: function initFn() {
 		this.createOverlays();
 	},
@@ -162,7 +163,7 @@ var World = {
 	   
 	   var infoProducto1 = new AR.HtmlDrawable({
        //   html:"<div>Ver info del producto</div>",
-   		  uri: "assets/articulos/articulo.html"
+   		  uri: this.host + "/producto/SKU11"
 		}, 0.8, {
 		    viewportWidth: 800,
 		    viewportHeight: 600, 
