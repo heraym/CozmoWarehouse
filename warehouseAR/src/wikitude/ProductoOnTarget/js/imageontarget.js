@@ -1,7 +1,6 @@
 var World = {
 	loaded: false,
-    this.host = "http://132.145.170.127:4444";
-	
+    
 	init: function initFn() {
 		this.createOverlays();
 	},
@@ -156,21 +155,45 @@ var World = {
     		   offsetY: -0.6
 		});
 
-		this.imgArticulo1 = new AR.ImageResource("assets/articulos/articulo1.png");
+		this.imgArticulo1 = new AR.ImageResource("assets/articulos/SKU11.png");
         var articulo1 = new AR.ImageDrawable(this.imgArticulo1, 1, {
+			offsetX : 0.3
+	   });      
+	   
+	   this.imgArticulo2 = new AR.ImageResource("assets/articulos/SKU12.png");
+        var articulo2 = new AR.ImageDrawable(this.imgArticulo2, 1, {
 			offsetX : 0.3
 	   });      
 	   
 	   var infoProducto1 = new AR.HtmlDrawable({
        //   html:"<div>Ver info del producto</div>",
-   		  uri: this.host + "/producto/SKU11"
-		}, 0.8, {
+   		  uri: "http://132.145.170.127:4444/producto/SKU11"
+		}, 1.3, {
 		    viewportWidth: 800,
 		    viewportHeight: 600, 
 		    // backgroundColor: "#000000",
 		    opacity: 0.5,
-		    offsetX: 0.1,
-		    offsetY: 0.5,
+		    offsetX: 0.3,
+		    offsetY: 0.8,
+		    horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.RIGHT,
+		    verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP,
+		    clickThroughEnabled: true,
+		    allowDocumentLocationChanges: false,
+		    onDocumentLocationChanged: function onDocumentLocationChangedFn(uri) {
+		        AR.context.openInBrowser(uri);
+    		}
+          });  
+
+	    var infoProducto2 = new AR.HtmlDrawable({
+       //   html:"<div>Ver info del producto</div>",
+   		  uri: "http://132.145.170.127:4444/producto/SKU12"
+		}, 1.3, {
+		    viewportWidth: 800,
+		    viewportHeight: 600, 
+		    // backgroundColor: "#000000",
+		    opacity: 0.5,
+		    offsetX: 0.3,
+		    offsetY: 0.8,
 		    horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.RIGHT,
 		    verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP,
 		    clickThroughEnabled: true,
@@ -202,9 +225,14 @@ var World = {
 			}
 		});
 		
-		var pageFour = new AR.ImageTrackable(this.tracker, "telefono", {
+		var pageFour = new AR.ImageTrackable(this.tracker, "SKU11", {
 			drawables: {
 				cam: [articulo1, infoProducto1]
+			}
+		});
+		var pageFive = new AR.ImageTrackable(this.tracker, "SKU12", {
+			drawables: {
+				cam: [articulo2, infoProducto2]
 			}
 		});		
 	},
