@@ -11,7 +11,7 @@ var nropedido = 0;
 var cancelar = false;
 
 /* Variable IOT */
-var host =  "oicteco-gse00014621.uscom-east-1.oraclecloud.com";
+var host =  "oicdemo-ladsecloudpilot.integration.ocp.oraclecloud.com";
 var port = 443;
 var autorizacion = "Basic aGVybmFuLmVucmlxdWUuYXltYXJkQG9yYWNsZS5jb206VG9tR29uLjExMDc=";
 
